@@ -1,0 +1,79 @@
+CSE 332 Exercise 2: 
+
+
+We're experimenting with the way we (auto-)grade this exercise! Please bear with us as we iron out the issues. We are using Gradescope's handwriting recognition to assist us with grading.
+
+To ensure Gradescope understands your submission, you must answer the questions on this PDF by following these instructions::
+Make a copy of this Google Doc
+Edit it by putting your answer in the box without the box moving or resizing. You should NOT use fancy formatting - e.g. n^5 is fine, we don't need n5.
+Download your copy (with your answers) as a PDF
+Upload the PDF to Gradescope
+
+The important thing is that the question boxes are all included exactly as this original document so Gradescope knows where to look.
+
+There will still be a human "in-the-loop'' for grading, and we can correct mis-grading by hand if needed. Since this is an experiment, as long as you make a good faith effort to follow the directions, we won't deduct formatting issues. If Gradescope is refusing your submission, send us an email with your PDF BEFORE the deadline or we will not accept it.
+
+Program Analysis
+For each of the following, please provide a simplified, tight  bound, and a simplified, tight 𝒪 bound. For example, your submission must look like this:
+#1. 
+
+sum = 0;  
+for (i = 0; i < n; i++) {  
+	sum++;
+}
+Omega(n) , 𝒪(n)
+
+#2.
+
+sum = 0  
+for (i = 0; i < n; i++) {  
+    for (j = 0; j < n; j++) {  
+        sum++  
+    }  
+}
+Omega(n^2) ,  𝒪(n^2)
+
+//Again, your answer must NOT go outside this box and the box should NOT move or be resized. You should NOT use fancy formatting - e.g. n^5 is fine, don't use n5.
+
+#3.
+
+sum = 0  
+for (i = 0; i < n; i++) {  
+    for (j = 0; j < i*i; j++) {  
+        sum++  
+    }  
+}
+Omega(n^3) , 𝒪(n^3)
+
+#4.
+
+sum = 0  
+for (i = 0; i < n; i++) {  
+    for (j = 0; j < i*i; j++) {  
+        if (j > 2) {  
+            break  
+        }  
+        sum++  
+    }  
+}
+
+Omega(n)  ,  𝒪(n)
+
+Again, your answer must NOT go outside this box and the box should NOT move or be resized. You should NOT use fancy formatting - e.g. n^5 is fine, don't use n5.
+
+
+#5.
+for (i = n; i > 0; i -= 2) {  
+    if (i % 2 == 0) {  
+        q = i  
+        while (q != 0) {  
+            q -= 2  
+        }  
+    }
+}
+
+
+Omega(n)   ,  𝒪(n^2)
+
+
+
